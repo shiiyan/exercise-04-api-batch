@@ -1,0 +1,14 @@
+curl -i -X PUT -d '{"name":"iphone 999"}' http://localhost/exercise-04-api-batch/api/products/1
+
+curl -i -X POST -F "name=ipad" -F "detail=tablets designed and marketed by Apple Inc." -F "price=100000"  http://localhost/exercise-04-api-batch/api/products
+
+curl -i -X POST -F "name=iphone 88" -F "detail=smartphones designed and marketed by Apple Inc." -F "price=70000"  http://localhost/exercise-04-api-batch/api/products
+
+
+curl -i -X DELETE http://localhost/exercise-04-api-batch/api/products/1
+
+
+curl -i -X GET http://localhost/exercise-04-api-batch/api/products
+
+
+curl -i -X GET http://localhost/exercise-04-api-batch/api/products/search/2
