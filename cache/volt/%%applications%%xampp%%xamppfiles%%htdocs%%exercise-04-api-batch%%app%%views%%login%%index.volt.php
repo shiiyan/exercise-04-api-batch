@@ -1,6 +1,9 @@
 <div class="container" align="right">
-	<?= $this->tag->linkTo(['/', 'Homepage']) ?>
+	<nav class="navbar-right bg-light">
+	<?= $this->tag->linkTo(['', 'Homepage']) ?>&nbsp;&nbsp;
+	</nav>
 </div>
+
 <div class="container">
     <p><h2>Login page</h2></p>
 </div>

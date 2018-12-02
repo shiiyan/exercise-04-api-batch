@@ -1,6 +1,9 @@
 <div class="container" align="right">
-	{{ link_to('/', 'Homepage') }}
+	<nav class="navbar-right bg-light">
+	{{ link_to('', 'Homepage') }}&nbsp;&nbsp;
+	</nav>
 </div>
+
 <div class="container">
     <p><h2>Login page</h2></p>
 </div>

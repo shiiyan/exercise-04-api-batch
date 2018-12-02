@@ -28,7 +28,7 @@ class SecurityPlugin extends Plugin
 		}
 
 		$privateResources = [
-			'profile' => ['index']
+			'profile' => ['index','summaryall','summarybydate']
 		];
 
 		foreach ($privateResources as $resourceName => $actions) {

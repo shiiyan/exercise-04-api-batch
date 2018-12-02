@@ -6,5 +6,5 @@
 
 <div class="container">
 <!-- generate HTML code<a href="">Login Here!</a> -->
-	{{ link_to('/login', 'Login Here') }}
+	{{ link_to('login', 'Login Here') }}
 </div>

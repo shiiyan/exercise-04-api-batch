@@ -34,6 +34,23 @@ $router->add(
         'controller' => 'profile',
         'action'     => 'index',
     ]
+)->setname('show-profile');
+
+
+$router->add(
+    '/profile/summaryall',
+    [
+        'controller' => 'profile',
+        'action'     => 'summaryall',
+    ]
+);
+
+$router->add(
+    '/profile/summarybydate',
+    [
+        'controller' => 'profile',
+        'action'     => 'summarybydate',
+    ]
 );
 
 $router->add(

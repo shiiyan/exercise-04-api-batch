@@ -22,8 +22,33 @@ class ProfileController extends Controller
          }
 
          $this->view->title = 'Profile of ' . $user->name;
+
+         
+         $this->view->name = $user->name;
          $this->view->user = $user;
     }
+    public function summaryallAction()
+    {
+        $summaries = Summaries::find();
+        $this->view->title = 'Summary of Products';
+        $this->view->name = $this->session->get('auth')['name'];
+        $this->view->summaries = $summaries;
+    }
+    public function summarybydateAction()
+    {
+        $this->view->name = $this->session->get('auth')['name'];
+        $this->view->title = 'Summary of Products';
 
+        if ($this->request->isPost()) {
+            $date = $this->request->getPost('date');
+            $summary = Summaries::findFirst(
+                [
+                    'conditions' => "date='{$date}'",
+                ]
+            );
+            $this->view->date = $date;
+            $this->view->summary = $summary;
+        }
+    }
 
 }

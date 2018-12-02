@@ -6,5 +6,5 @@
 
 <div class="container">
 <!-- generate HTML code<a href="">Login Here!</a> -->
-	<?= $this->tag->linkTo(['/login', 'Login Here']) ?>
+	<?= $this->tag->linkTo(['login', 'Login Here']) ?>
 </div>

@@ -11,4 +11,3 @@
 	  <li class="list-group-item" style="word-wrap: break-word">Bearer Token: <?= $user->token ?></li>
 	</ul>
 </div>
-
