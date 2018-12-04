@@ -58,7 +58,7 @@ $di->set(
     'url',
     function () {
         $url = new UrlProvider();
-        $url->setBaseUri('/exercise-04-api-batch/');
+        $url->setBaseUri('/exercise-04-api-rev/');
         return $url;
     }
 );

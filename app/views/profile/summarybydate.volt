@@ -1,9 +1,9 @@
 <div class="container">
-	<h2><label for='date'>Enter date to search:</label></h2>
+	<p><h2><label for='date'>Enter date to search:</label></h2></p>
 	{{ form('profile/summarybydate', 'method': 'post', 'class': 'form_group') }}
 	  <div class="form-row align-items-center">
 	    <div class="col-sm-3 my-1">
-	      {{ date_field('date', 'class': 'form-control') }}
+	      {{ date_field('date', 'class': 'form-control', 'required': true) }}
 	    </div>
 	    <div class="col-auto my-1">
 	      {{ submit_button('send', 'class': 'btn btn-primary') }}
